@@ -23,6 +23,7 @@ module.exports = {
         alias: {
             'handlebars': '../../node_modules/handlebars/dist/handlebars',
             'app': path.resolve(__dirname, 'app') + '/scripts/app.js',
+            ziggy: path.resolve('vendor/tightenco/ziggy/dist/vue'),
         },
         extensions: ['.js']
     },

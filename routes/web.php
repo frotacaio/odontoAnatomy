@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OdontoController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,4 +16,6 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [OdontoController::class, 'index']);
+Route::get('/', [OdontoController::class, 'index'])->name('odonto.login');
+Route::get('/Registro', [LoginController::class, 'index'])->name('odonto.registro');
+
