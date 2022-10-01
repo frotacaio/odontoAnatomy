@@ -15,8 +15,10 @@ return new class extends Migration
     {
         Schema::create('logins', function (Blueprint $table) {
             $table->id();
+            $table->string('nome_completo');
+            $table->string('email');
             $table->integer('matricula')->unique();
-            $table->string('senha');
+            $table->string('senha')->encrip;
             $table->timestamps();
         });
     }
