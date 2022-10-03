@@ -19,7 +19,12 @@ class LoginController extends Controller
            'matricula' => 'required|numeric',
            'senha' => 'required' 
         ]);
-        Login::create($request->all());
+        Login::create([
+            'nome_completo' => $request -> nome_completo,
+            'email' => $request -> email,
+            'matricula' => $request -> matricula,
+            'senha' => bcrypt($request -> senha),   
+        ]);
         return redirect('/');
     }
 }
