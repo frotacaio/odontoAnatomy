@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Login;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
@@ -17,14 +18,16 @@ class LoginController extends Controller
            'nome_completo' => 'required',
            'email' => 'required|email',
            'matricula' => 'required|numeric',
-           'senha' => 'required' 
+           'password' => 'required' 
         ]);
-        Login::create([
+        User::create([
             'nome_completo' => $request -> nome_completo,
             'email' => $request -> email,
             'matricula' => $request -> matricula,
-            'senha' => bcrypt($request -> senha),   
+            'password' => bcrypt($request -> password),   
         ]);
+
+
         return redirect('/');
     }
 }
