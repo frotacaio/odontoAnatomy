@@ -22085,15 +22085,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _img_odontologonobg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../img/odontologonobg.png */ "./resources/img/odontologonobg.png");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Página Principal", -1
-/* HOISTED */
-);
 
-var _hoisted_2 = [_hoisted_1];
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"border-gray-200 px-2 sm:px-4 py-2.5 bg-purple-800\"><div class=\"container flex flex-wrap items-center justify-between mx-auto\"><a href=\"https://flowbite.com/\" class=\"flex items-center\"><img src=\"" + _img_odontologonobg_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" class=\"h-6 mr-3 sm:h-12\" alt=\"Flowbite Logo\"></a><button data-collapse-toggle=\"navbar-default\" type=\"button\" class=\"inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600\" aria-controls=\"navbar-default\" aria-expanded=\"false\"><span class=\"sr-only\">Open main menu</span><svg class=\"w-6 h-6\" aria-hidden=\"true\" fill=\"currentColor\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z\" clip-rule=\"evenodd\"></path></svg></button><div class=\"hidden w-full md:block md:w-auto\" id=\"navbar-default\"><ul class=\"flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-purple-800\"><li><a href=\"#\" class=\"block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-teal-500 md:p-0\" aria-current=\"page\">Início</a></li><li><a href=\"#\" class=\"block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent\">Formulário</a></li><li><a href=\"#\" class=\"block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent\">Services</a></li><li><a href=\"#\" class=\"block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent\">Pricing</a></li><li><a href=\"#\" class=\"block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent\">Contact</a></li></ul></div></div></nav>", 1);
+
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Navbar ")], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  );
 }
 
 /***/ }),
@@ -22117,7 +22118,7 @@ var _hoisted_1 = {
   "class": "h-screen md:flex"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-sky-900 to-purple-800 i justify-around items-center hidden\"><div><div><img src=\"" + _img_odontologonobg_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" class=\"w-full\" alt=\"\"></div><div class=\"flex justify-center\"><h1 class=\"text-white font-bold text-4xl font-sans\"></h1><p class=\"text-white mt-1\"></p><button type=\"submit\" class=\"block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2 hover:bg-gray-300\">Leia mais</button></div></div><div class=\"absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-sky-900 to-purple-800 i justify-around items-center hidden\"><div><div><img src=\"" + _img_odontologonobg_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" class=\"w-full\" alt=\"\"></div><div class=\"flex justify-center\"><h1 class=\"text-white font-bold text-4xl font-sans\"></h1><p class=\"text-white mt-1\"></p></div></div><div class=\"absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div><div class=\"absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8\"></div></div>", 1);
 
 var _hoisted_3 = {
   "class": "flex md:w-1/2 justify-center py-10 items-center bg-white"

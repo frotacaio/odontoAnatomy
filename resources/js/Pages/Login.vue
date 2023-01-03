@@ -8,7 +8,6 @@
 				<div class="flex justify-center">
 					<h1 class="text-white font-bold text-4xl font-sans"></h1>
 					<p class="text-white mt-1"></p>
-					<button type="submit" class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2 hover:bg-gray-300">Leia mais</button>
 				</div>
 			</div>
 			<div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>

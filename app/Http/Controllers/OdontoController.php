@@ -27,4 +27,23 @@ class OdontoController extends Controller
             dd('Dados incorretos, verifique e tente novamente');
         }
     }
+
+
+/*     public function logout(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
+    }
+
+    public function forgotpassword(Request $request) {
+
+        $request->validate([
+            'email' => 'required|email|exists:users,email'
+            
+        ]);
+        $user = User::where("email",$request->get('email'))->first();
+        $user->notify(new EmailNotification($user));
+    } */
+
 }
