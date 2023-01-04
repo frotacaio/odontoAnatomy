@@ -30,7 +30,11 @@
   </div>
 </nav>
     <!-- End Navbar -->
+    <Slide/>
 </template>
+<script setup>
+  import Slide from './Slide.vue'
+</script>
   
 
   
