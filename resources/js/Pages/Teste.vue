@@ -6,7 +6,7 @@
         
         <div id="altura" class="mt-4rounded-md border-dashed bg-no-repeat border-1 bg-local block  border-gray-100 border-l-2 ml-8 mr-8">
             <img class="ml-auto mr-auto h-full w-10/12"  :src="steps[current].content"/>
-            <div class="flex" id="translate" v-if="steps[current].img==1" >
+            <div class="flex" id="translate">
                 <div class="w-1/5">
                     <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-8" >
                         <template #content>
@@ -15,7 +15,7 @@
                                 <a-button type="primary" class="mt-2">Enviar</a-button>
                             </a-input-group>
                         </template>
-                        <a-button class="text-sm">1 - Responda</a-button>
+                        <a-button class="text-sm">Responda</a-button>
                     </a-popover>
                 </div>
             
@@ -27,7 +27,7 @@
                                 <a-button type="primary" class="mt-2">Enviar</a-button>
                             </a-input-group>
                         </template>
-                        <a-button>2 - Responda</a-button>
+                        <a-button>Responda</a-button>
                     </a-popover>
                 </div>
                 <div class="w-1/5">
@@ -40,158 +40,32 @@
                                 <a-button type="primary" class="mt-2">Enviar</a-button>
                             </a-input-group>
                         </template>
-                        <a-button>3 - Responda</a-button>
+                        <a-button>Responda</a-button>
                     </a-popover>
                 </div>
                 <div class="w-1/5">
-                    <div class="h-1/6">
-                        <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-3" >
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-3 mt-3">
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>Responda</a-button>
+                    </a-popover>
+                    <div>
+                        <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-36" >
                             <template #content>
                                 <a-input-group compact>
                                     <a-input/>
                                     <a-button type="primary" class="mt-2">Enviar</a-button>
                                 </a-input-group>
                             </template>
-                            <a-button>4 - Responda</a-button>
-                        </a-popover>
-                    </div>
-                    <div class="h-5/6">
-                        <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-4" >
-                            <template #content>
-                                <a-input-group compact>
-                                    <a-input/>
-                                    <a-button type="primary" class="mt-2">Enviar</a-button>
-                                </a-input-group>
-                            </template>
-                            <a-button>5 - Responda</a-button>
+                            <a-button>Responda</a-button>
                         </a-popover>
                     </div>
                 </div>
       
-            </div>
-            <div class="flex" id="translate" v-if="steps[current].img==2">
-                <div class="w-1/5">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-8" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button class="text-sm">6 - Responda</a-button>
-                    </a-popover>
-                </div>
-            
-                <div class="w-1/5">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-20 mt-96" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>7 - Responda</a-button>
-                    </a-popover>
-                </div>
-                <div class="w-1/5">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-24 ml-20" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>8 - Responda</a-button>
-                    </a-popover>
-                </div>
-                <div class="w-1/5">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-24 ml-28" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>9 - Responda</a-button>
-                    </a-popover>
-                </div>
-            </div>
-            <div class="flex" id="translate" v-if="steps[current].img==3">
-                <div class="w-2/7">
-                    <div class="h-1/6">
-                        <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-80" >
-                            <template #content>
-                                <a-input-group compact>
-                                    <a-input/>
-                                    <a-button type="primary" class="mt-2">Enviar</a-button>
-                                </a-input-group>
-                            </template>
-                            <a-button class="text-sm">10 - Responda</a-button>
-                        </a-popover>
-                    </div>
-                    <div class="h-5/6">
-                        <a-popover title="Resposta" trigger="hover" placement="top" class="ml-28 mb-72" >
-                            <template #content>
-                                <a-input-group compact>
-                                    <a-input/>
-                                    <a-button type="primary" class="mt-2">Enviar</a-button>
-                                </a-input-group>
-                            </template>
-                            <a-button>11 - Responda</a-button>
-                        </a-popover>
-                    </div>
-                </div>
-                <div class="w-1/7">
-                </div>
-                <div class="w-1/7">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-36 ml-36" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>12 - Responda</a-button>
-                    </a-popover>
-                </div>
-                <div class="w-1/7">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-0 ml-14" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>13 - Responda</a-button>
-                    </a-popover>
-                </div>
-                <div class="w-1/7">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-16" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>14 - Responda</a-button>
-                    </a-popover>
-                </div>
-                <div class="w-1/7">
-                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-40 ml-28" >
-                        <template #content>
-                            <a-input-group compact>
-                                <a-input/>
-                                <a-button type="primary" class="mt-2">Enviar</a-button>
-                            </a-input-group>
-                        </template>
-                        <a-button>15 - Responda</a-button>
-                    </a-popover>
-                </div>
-            
-            
-            
-            
-            
             </div>
 
            

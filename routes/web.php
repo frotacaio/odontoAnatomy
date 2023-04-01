@@ -20,6 +20,7 @@ use Inertia\Inertia;
 Route::get('/', [OdontoController::class, 'index'])->name('odonto.login');
 Route::get('/Registro', [LoginController::class, 'index'])->name('odonto.registro');
 Route::get('/Home', [HomeController::class, 'index'])->name('odonto.home');
+Route::get('/Teste', [HomeController::class, 'index2'])->name('odonto.teste');
 
 
 Route::post('/RegistroPost', [LoginController::class, 'post'])->name('odonto.registroPost');
