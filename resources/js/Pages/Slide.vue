@@ -6,6 +6,7 @@
         
         <div id="altura" class="mt-4rounded-md border-dashed bg-no-repeat border-1 bg-local block  border-gray-100 border-l-2 ml-8 mr-8">
             <img class="ml-auto mr-auto h-full w-10/12"  :src="steps[current].content"/>
+            <!-------------------- IMAGEM 01 --------------->
             <div class="flex" id="translate" v-if="steps[current].img==1" >
                 <div class="w-1/5">
                     <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-8" >
@@ -69,6 +70,7 @@
                 </div>
       
             </div>
+                <!-------------------- IMAGEM 02 --------------->
             <div class="flex" id="translate" v-if="steps[current].img==2">
                 <div class="w-1/5">
                     <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-8" >
@@ -116,6 +118,7 @@
                     </a-popover>
                 </div>
             </div>
+            <!-------------------- IMAGEM 03 --------------->
             <div class="flex" id="translate" v-if="steps[current].img==3">
                 <div class="w-2/7">
                     <div class="h-1/6">
@@ -187,24 +190,305 @@
                         <a-button>15 - Responda</a-button>
                     </a-popover>
                 </div>
-            
-            
-            
-            
-            
             </div>
+            <!-------------------- IMAGEM 04 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==4">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-96 ml-0" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>15 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-96 ml-36" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>16 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-6 ml-10" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>17 - Responda</a-button>
+                    </a-popover>
+                </div>
+            </div>
+            <!-------------------- IMAGEM 05 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==5">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-0 ml-24" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>18 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+            <!-------------------- IMAGEM 06 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==6">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-48 ml-24" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>19 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-44 ml-0" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>20 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+            <!-------------------- IMAGEM 07 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==7">
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-20 ml-40" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>21 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-8" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>22 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-52" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-2">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>23 - Responda</a-button>
+                    </a-popover>
+                </div>
+            </div>
+                        <!-------------------- IMAGEM 08 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==8">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-14 ml-40" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>24 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+                <!-------------------- IMAGEM 09 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==9">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-44 ml-60" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>25 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+                        <!-------------------- IMAGEM 10 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==10">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-28 ml-20" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>26 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+                    <!-------------------- IMAGEM 11 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==11">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-32 ml-20" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>27 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-24 ml-14" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>28 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="bottom" class="mt-44 ml-4" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>29 - Responda</a-button>
+                    </a-popover>
+                </div>
+            </div>
+                <!-------------------- IMAGEM 12 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==12">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-40 ml-32" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>30 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+                    <!-------------------- IMAGEM 13 --------------->
+            <div class="flex" id="translate" v-if="steps[current].img==13">
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-40 ml-14" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>31 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+                <div class="w-1/5">
+                    <a-popover title="Resposta" trigger="hover" placement="top" class="mt-96 ml-32" >
+                        <template #content>
+                            <a-input-group compact>
+                                <a-input/>
+                                <a-button type="primary" class="mt-3">Enviar</a-button>
+                            </a-input-group>
+                        </template>
+                        <a-button>32 - Responda</a-button>
+                    </a-popover>
+                </div>
+                <div class="w-1/5">
+                </div>
+            </div>
+            
 
-           
         </div>
-
         <div class="mt-4">
             <a-button v-if="current < steps.length - 1" type="primary" @click="next">Próxima</a-button>
-            <a-button
-                v-if="current == steps.length - 1"
-                type="primary"
-            >
-                Feito
-            </a-button>
+            <a-button v-if="current == steps.length - 1" type="primary"> Feito </a-button>
             <a-button v-if="current > 0" style="margin-left: 8px" @click="prev">Anterior</a-button>
         </div>
   </div>
@@ -223,7 +507,7 @@
         { content: 'https://lh3.googleusercontent.com/-SvrYImsI6v1jKvP2PFe4uYQkXFeZr_FVxtHnQO1s2pGYGk5jjU6BNCJteCq-HxewX5AKeMu9gDhDtTUnEyBLUYg9QsS1635J5uTsyt-hl9n6rffkr0J0cepPjE_Yi1vpt9y5IgG1ryYUr4_na3SiqSpA82YNNJQrCuW6_FvRgighZA--AlCMHvkqPE9PDw4idcSJ9CCRFCygKPzM0-PsB6vZ0s335C6IUIMljL-e-sAQF2spdCkJOouWPUCD02S3z2aLkRlxI-4V1SyXjtZZzv6xJvQJDvkcrFBsXxYqTuqmoM3ToLVY-RDxSPya86EYbc-fGGsZ7p5SiNc4dALNqkca6HGDviJHCE1n76lT58X3CrafioD4VdPS5Rdp2eAwujf5PgHox-qkrzwbYs3EwKxzb7xOmm9mcWed8bghSM4-kfEZu6DwmjgdEJ0WU-OBnvYWp1vvbhaoL_Ybj2gb5mJd0khMqR2K8eyKV-kv0RggEMfF92Lkec3opUkR9adEwSilEmw67ZRolp1wq3sUiSqAS_dAgdQOsBArexanFg3i5z8bYY7Cr_0Rrke8MZk178yS-JhrowwaXgRQiKd3J4nrSvBZluHc0XcKZx7keDlWoJB0BW8hAP65RK36e1anTfewoDkDyuUiz2oHF3b-Yj6XF-D4VFv-dCF-73xHDrhdmLV3UjH9CUTj_NchQYJ2W2Who3SJUZUGNJxLVtKBTje7LHIy3DZ-tRT2pmIvD8R_2gla7-qJgcARObibc_eyLLfv-1uRabCT2aPkoYA_RfQlrj7XyWvP-HHDA6dgJbwUKiOmkUzQd12qe9p1h-LYlB51l8wEYj55UxHEBTU_Cy2fzsdzsoNUwokKyejs03VmgyTIdYtCplTBHsoYsI_N3e9fMGn9d3qvgz7kopKGGiABJPkVh6qLG_cDZU349MJh7AT23MrDkAlfHJDPK6t7gZWMJbpGnaK4jGjuOKV98B7NFLRJBOUGCsxz74twg1PMusZQ6mDQQ=w1134-h637-no?authuser=0', img:2},
         { content: 'https://lh3.googleusercontent.com/JO4OPlVGd1DhpSOg3XNpAwzmXAQdPweZy_ogSPAQ_oNpK5GsafXmvesy3bIUi-AG-U6ksDe8-tefqJhjvar5Y2ahOYn4GRm0Z-VR5zrY2e6Ax3cxDa2EC2tRN5CInhjcgEZWDp26uL406eCWBPP-vv7Sa1BHVyyNhb2cRigO97h5qG8pDum4rmsPzoPgKVdN7l2J1RtSUEDE0yy42JGFIDGau-QDZcG0gMlwc1iGzP7O4O3_aawMxR0-NDlSgdbAZ_25MrPOySsEt-WQ62S5xhhZAekW1BueioPr2sD-wqrkq0dPoPIrIsIUq6xz-V8NE3gCjz_I9IE4T5x4juvV1zjdEVp_jK9yvHvq8f9zXP8ciNdY_zUXTh8eSAOKuh9uDrgCh1utr-WhXEcuiNIg2xyprMuHliFO14IWiU6vlOhSKou82PnvQbnmcvjwnnHqZhjJxwNuoC3JBc9dQgwqnV_NyJbybVUv7K5x1UAXydCiDkqoF6Wrp6sQ3KjID32DsApXAVFL36mp7r1HP87k-SzSQ6sSRkDFrpxLbui8TQcUz7LY8emVEzg0ylCS_HFtD81Sv5vj46YA0ZGhWWBjZ2IDMQN2zraknzUch-Ru5vyGuVx2bu9E_fDiVFvdFkcQlVrjSse-D9qn_q7O5nbNWWlmbowgq8f1piVRrr2kg4kV38S67cgXzqbBAY9ft3uwZQ3CT4tlvSHPpOkCZadEk_3QymLdrmK9mKCQPGunvdVybGhBMJKfmKXBfAtNfpBeK035iI3QP2M-2u3tBJaNBACEsQoy1a7odGMKaBS2SIkTe_JEFKY8TSy-DkFAkBI823YUPLwM2tVKaYYoDHCxIcB1xmj7OjcYpmWGwg7E1deiw8GP5_jFduCYYXi6tp6hY0Xm3NcwhbBc_WNq9HpNhXFSeSy0vpbnnbAg6t8FboSaxZNCd1DCvKXU-uJyVY9ysKF705GW8iiMzrY_Md6tA1NMV8JVFoPPsk9rZ5uq1NU5iQcxxhiIhw=w1134-h637-no?authuser=0',img:3},
         { content: 'https://lh3.googleusercontent.com/hUMc_RIMX7rNKfZeyFTYOnM98DgOY2X6ZrjbQ999wz_d6sK0myBwCp4GmIp5dKAgZBO9lxHQtiXUsDupxMzTS0H1Nv7wDCQ55ZIDNPKguQD9zUdZdkhNPFaXLoVycGMO5kygi2QUA19v4JpfzXwfHiOniw82Mls9NxGo1nZazPeuA35PMptatfCfMwBPvrMyE9Lx0ow0Pl2lLa4MlDJU0Uc2fAnvqJljTrW1alroQe4g2qWpqaVRMkq0VoI6nk-7VdPExfje2p57t3Jd4Ch5q_h3NhE_UXVMq2zm4k3xOgLCkv4I60rFJ29OUv9AGunnwTU9PyVy-Y26WqyurGqDbunWXanMx_RIeMttTk9jtDPkwQIb8QvvOK-6i4pBYxMMRJYCp5r36241BbVPL78UVS9MvcbxfOR6e7O7QDEVF8-0mBNfrDk75KqdodCbRcEeT7mBZiAptOKPWG_15vWR6UjsJXKVEEUJP3zLPgGg50yy6C8A-yg1koJPLmbcsg7sPmSNMkQk5PYfHmaHeS7gGzztPQu93thhjOpvsOrs14AGJECIX7wJPxDFQhgtTrLvZ5gOuObLES-uVKNzMZV8hF0bj-GzVfjrF5yTjFedg7-iiVlOVJ-w7Ly07zt_uQ-XmYnF62i-zD6a55HdHiFB8eGHlvVOkR-uFC53jdr0Y5rJEhtCqTn4k-hDLU_tqERjsrwKHCUnk9LRrgjURVy3oF6JlNQUpXJFuUeNrXk1K7rKCTLttiTJSnJbIOtCf4-vPIy9Vzm0emmgk2aY5Q79HW2BQt1dm7sn9Rw6x4yHTzTHcQpXVRumZMUgUVNhWyORwW-UZ85FrpsTP_7HYb9WziUjY-CmnNZURjkXLCKGsPHtlvd0X6Hc5kGIYk24VNu6WOt2m1PGymz496UIwJpyYHESHWXurV2ThtALdVpK73tJufPfPeg70kH--3U0yli9uK-67FQJM6zgN5p0Uj14de0_1vZnCLFqx08nrNJJpnhsBeVXGr8URA=w1134-h637-no?authuser=0',img:4},
-        { content: 'https://lh3.googleusercontent.com/SkhbcUqYwP7yJ08iBrZgAKBHL2tEPJKGAfIhMDDdHe-LdpQABuFanJplTB1Y-eQVGnjPbj1qJMKof0vkeY75qrfOTmRikv0gaoTsGzEkCuV_MUz9pfqIDI-W97z6voN-HDvO_q4J4Yx6T-B_mt7mXcc8MCjgxhUOMIaHYRy8K8z6Jjas5SbxG4GbK3jLdyeWTgt_yCUvsF2i8kgEaGrp0NRsVCqtUwZ33oaWKtGP6im5dCWApKQzePwA8ZXdU7dbV0oWX9VhHjnN70lUlfmt_zOgsHloRx5nT7VWIAxHQj4Z5qpouQv6EHxwEyrwf2KQ9G2HL0D8Nq6jJBU2d5MyKi9wUabAcasLtC8L1JGP0uIgmMB1IWVgMpI7EvpqMpdHf4mUbLtRbYGMyjRIp5f5awaE3dPwU9m-kyOZU-WhUyx7sKhjAH7qrvsm0BdBDq45Zt8fRpXNZeb2xQ_Bll8IMIZn8gHSRS32IGjKsQhVmgryzJgSq8KQQhSNvIT0XJnPnIcEIj--oQYSkYXkpN9fbES1MwEri-rt5wu_oPia1XvkMH9diQWRyuSymG4i0Cpjom06UUtMZIdHaC4hbdc7a9nGsKUVSCBrqMouxY0NOGjvbrtZczQ8yF4Zntt_uj32TPE8eNERAGREbzHf1XpvYxEFp1lMmfxmZno8FWxihYHkwQ63nHiki-HiasGsEBni2ygwjCLlN7wNuBQ678_JISLtAxrLifYKFLcRDkC0f2Ngv2wfNCqRTXa4pOEgKp_qCPvJfS6lYuQhyUBIUp240Q_QVRTUSyCnKHCBpeQFaQqkU3Nh3xF_pJf74xCGiZ5wW-x89me8-gC5cWYDtjSZY3djEtkvr0_Onxn3yQ5noQ0Fg46kEtHzy0sVlHn6T7TLoWL4avF3kaCQysSNx6FEbe5frMP5r4hLX7v8F1Bonn72w6CTiZ-7UtgnuQfCM_ypfFFKIN7PmWeKPD9RCMRoN5LI3OyxwlSFoNbKzaPsNWfc8gc1UGUHFA=w1284-h637-no?authuser=0',img:5},
+        { content: 'https://lh3.googleusercontent.com/MSLW7doa5JISbIpKgh_2c6YfgREgsY1QxqdVh4zQn4Fo6gzcK6HHYpetc8tbE639J-9v4g07jWXDGWAh0rO7O-x4hzCxzWmD1SRvGQMzPEhNjjL2zFPHE7cp7cTnqD2-pESdUF4-zTQTVEK-4yT5FHX8APpFEl8zjOkTKK1ki7dNYsDLXTZ3cQOb3cxkiszy6iGd20aeqn2KUrJ89xbXe1uU5eYZUKjqOMyjNJCrwoGJ09uew89pHbIkDCLjDhHl834RGm-YNx8c0njW9nQHfkHf3oQn7c6O_BhVivq9F8WoZZ9VcRgYcvgZI-qdkNOm-9zP_aLsk8ZUyJn-aznL_YiXIgpYw6mERuUVXGJNCdXb6N10JEW5u3mLLnlkG5HsHtbb9yEyr0XhSAfyzJQMu3oyvBShGhBAW3q8T85dD5AFLvo4jDgHwzu12SmhnVfAcoD5KAfnU6DKxuX3XI5lFvwZW269qbIa6m9b8axygSXiHNz36lv2BC77maHa-35C-vyujMaM4TeCFy1D4SysY4m3GPMEf0Bj6Oc5obmg7zwvdPcIXSfXd3D-iUXdrCQiajtY2JkZ0_bX704gRSb0tf9fl1SKRjoKt14Sz2QiQqjdSIExzh3SCcflfeShmYewrSi0fX6FUr-LhiDoqfZHO_QHMEUSFXtGSMM9j8mvbMxiuTP0wf2A27b6KERkfAVwTf1e7JUq5WkanZzvBafiGs88KSsG_VV-6YoApQ-lqMB3qOm4lJGIKAd9NJMoQ3rCo4XOi_napmefYk6_RT4UBlzGsIou9Uh4Gz2lOUTRyPS7qHH8kD30_-sOw4UH_o7NP6zkW0JRMnDt4XEpXi6I-K_hm57lKM2iEQaAtv-6p3frSzvQJmpBMPDma9rhj2PVKc0KSbaxhX7vyerydnpt_aKCLWFddVUwzJ8gaKcn4SIOUF2xr-sqm35MeRVbjfBmtRLPjArUU-thTNzFPSI=w970-h482-s-no?authuser=0',img:5},
         { content: 'https://lh3.googleusercontent.com/fXTwMIVPiAxO3_-TFOlB7g5HBLY8DK3jcANMuRNDsJ9dgh3veeWnPefu7sPPrWpvtAj1xa0cswCnxhtdnVyYM9qJK5TG-k9Wz68WfYbQPg0984jeHoWpPUsYrHa76pZ4w1eI9RErnEphxxHRIe0O-RXxV9dck0CJzlJekDinfc8dqVKYFPGS67-DPRArlnAOwGPQVhkFJna_CN_hAQNCOf4ic3bMXjBBv0jV21rsZFeJmCXMtAyKkQqCpznFTVqgkG_Cl2lDRhX3CohThrrsiqbneh7bMI-4QYJBbzSxFHiRJc5k87R9x4YinC79qxjRBsX2r_u0bhXENlMGp8lncRQRDjydzAL4EaetrUNkA4e6Nz4LUUMBE0YFy5zXusRKw78FqzgLTYtQu3JYE3-7hSVyEjBaJ5G9py8JIqVvH4ZO1sYG5mE9O9tZJSJF3FbKqvoO8fJB6Hzwe348iDFG7ZJxOzetAm2bcjntL5egxEkDizt0-TGW3SR4o3dCzuKdcypMW_SEF8k3ZdoFbfHRA_EBHckHmzQBRHEo7qQcDyrDfDY6wshPmzfIEGhmgQmkArB_saTilC0yin2E2TsIUytssBHdYadB7FkdnnlNxkYpQL2BL0DDdEqj94V2_o3SfE-MHA3qObAGz4cUcr4KTY4sp-qskgMX44LpAsqnM5zgrrhgb10gECCuYkP2wTPR8434wPTP7GGxHVxz6jlfNqzSnVqRlk58PM_H8YyA_GXncEbLDlq__bhZ8xFqDE2wEJi7vcq8KvtFGVS7ecCN5PeIVr1JNGKScLREQRDN35m2CL-2CwCXFAcwWZH-RLzIv1BiJz-2TyDe9Ulvy44VTEZySqkD0edruJ3fj1w6Szyyw1xM_VDRytT3MohML1AbuI761Oi5a1THonkVhPn10lfJIac-rvwquGarAa0-HACEKQ_wj45PWbs77Hrhz0RwaEvs6GxqJddkoWkivHdzKnpeUJqT5ivRxlX7xkWZow5flq158agQ1w=w1291-h637-no?authuser=0',img:6},
         { content: 'https://lh3.googleusercontent.com/MX4HrjPTFZ1rPe5hWTlx6nUOXYDATIt_sd6ZAec2wVcztV1ZWyNfIWIFovVVCzMXX2y520LXuh9jbGTl9SYdAnYadgtti-U4NaUftEdLXFh94Sfe8cbaDV6rEBGNlxDENs2KdXv2AjipcCFZx5OF263zQeqRidA1y_btDwrVoBx2p9Kv7IhnW77NyBGr3GU9tcbZyXDL72D1WyPEj5YlDik2PUeQS4l9z3xH_HDSVSJ8SU1qzWw8GJHXvuKY3VvOZIw1bhEAmljY4woSB16w66QLoGp09Q76sTg5LESk0QUDLxYbqEenEDO5H6f5VHUKpPnnI5UdNlrJRYiBa49j19lkL1rjAyXN9cOhAxKj1sFXd23CG9chFH46NxqfUwJ78_zhLdQo_QixXem1qtLlYR6Dk5nSpPnIapnIi_Gb3Y4RmFy-LxfxcJ8Yo9Bz3iI3mun7BmBoPH5p2w9xzW3qRdlCKc900bMLwzeHPyHvo4D7LleV7wQ_kqBXHUDLTKe3Y19yLkzWWPnK0wG8wyiML5uuL_7vTF4GPcxK8ZKHGWBJwxH4XgA_llNiQCpGUGDeCIf8EZ161lCBm3B3Sjf6om6JlQNHhn5eEKsr_L7-CIe3LcdlKat-Yc7ruPtuMMMh4qV6fQc_gmu3s7EPIxKgy6Z5wP3Hwq331cUSF5JIiSj3s4VZSi2MOu1r2JDlAuHPs58oO_EyIYw8jmWizthPUCcODksKEDSdoAbfiqaJN_r4iIVnVKCXMEa6l-6CnOL5hjmU6j8O84qBdFe3FxJ14VgRc8-ww8I0ZwjdSi4gO32pbeeuC2Rp0aVqXCoumQzH8A3vdjj_RlsnjvOYGWCeiG00twPhFhHFSyV8o2k5nDoJOtURnNSn4c8akRCjB5kP9IMIQnau7gaoJT7A46GhCEjaG41QpGMBV_T1rRP5CoAZTpDfSMK5d3_YcVflR9GNl3yVZKosJa_iNuSdzMWLp9GCOMcLDl7JBJWTMNdTRPC6m4KB_0bk4A=w1283-h637-no?authuser=0',img:7},
         { content: 'https://lh3.googleusercontent.com/bbA1WLVVokEf0ZXNEcNpedohTcdW8syo-NIseI-r0jYHJnnqTUbx7rKzYtg8GQuATYjA3c20SoTMV1RRI8cj_l3LNkwve3TJ6kBKUvIoX-DkCgu1rrX2cQyosxh4DX_2VY7QNTVleEWa3wIS_d--orC8pCU2DMlY_7iPJuVpql5jfqW8L4tkx-L_HBiMfKMtcJeGcmw4LlJYTLuhyE8UBz5G8DsUp_1jQhJSw7in-mQq9drQJ3rsdXO0_7L-z_9zV5wtKg4rGp_5UYUZPaheUyXyNmNnfgV1T1Z_NjL6p8RkhhfF0-Ken_K_7x5lwQHgCWCPdPuhn0mIqXbqCQ_Fh8bCPA0QJ9db1p2UnV0gIX3_0Owq2bktP-EhSYgF_2NJ2fh_Wt23OtpJu1mouI8qn5F1L1e-Wwr1rykyQVWNRyliQGkWRm3dN9vY6Gv7pbw7QSMrS7GkbrYmLrmZblFdVJqhiQ-KntJ4N_DQJyNH7hD321E0CkMXM0s3R3zGMYuyQwae1dCoPH6y9hD61Y8DW8mwoRRja7o3CwJq6VnT0-lvsIMF2xYB0q3M6jM9Xj97EjFGnpP4gevQ6nCg43nJrbyndxTZOpvvOEK1YqyoG2W9s-Ra1hofFPodUKA47TeayRMZy6HFMehyzQkzcHaQWkslXXUg36u07TKHl8Uw12IjLrXLYHC8oi0DnwF5KZXcpq-8asw0NV5zTqk8zigYWXyJJFSt5Ov7cT9PC-eLjm9l40PV2uDfJ3LYuw3qMZfertlPz-ffgHJB0HfFS8uGPwYdz93I9yGQEdrHU5uC8_WSBn9R4KxpmQHTifRlVAn6eZSEX9HD32dEqXCd1XyVq40mHEvHmSPHJ86C4KGCHEaAQo57GTpOtbhFyzEreFYYki6xWt2Ab1XmoSUa-cp58DRtOVJxTZGFgts0x5i7SO-M5r8oNPRrQLHaRLZ8l_X18pUANfJzezY42RAInFmZ7IEW0vRRayvnKF7z-rn-S0vLhsTTVl1s0A=w1273-h637-no?authuser=0',img:8},
@@ -237,8 +521,6 @@
     ]
     next()
     prev()
-
-
 
 </script>
 

@@ -30,10 +30,16 @@
   </div>
 </nav>
     <!-- End Navbar -->
+    <h3 class="block py-2 text-teal-500 rounded text-lg text-center">Bem vindo, {{aluno.nome_completo}}</h3>
     <Slide/>
 </template>
 <script setup>
   import Slide from './Slide.vue'
+
+  const props = defineProps({
+    aluno: Object,
+})
+
 </script>
   
 
