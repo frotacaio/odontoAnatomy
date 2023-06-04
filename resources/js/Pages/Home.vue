@@ -810,7 +810,9 @@
                 </div>
                 <div v-if="button === ''">
                     <a-button v-if="current < steps.length - 1" type="primary" @click="next" >Próxima</a-button> 
-                    <a-button v-if="current == steps.length - 1" type="primary" @click="feito"> Feito </a-button>
+                    <form  @submit.prevent="submitForm">
+                        <button v-if="current == steps.length - 1" type="submit" className="bg-teal-400 px-4 py-1 rounded-md text-white"> Feito </button>
+                    </form>
                 </div>   
 
             </div>
@@ -893,19 +895,6 @@ const respostaUm = ''
 
 // Contador de acertos
 var cont = ref(0)
-var cont1 = ref(0)
-var cont2 = ref(0)
-var cont3 = ref(0)
-var cont4 = ref(0)
-var cont5 = ref(0)
-var cont6 = ref(0)
-var cont7 = ref(0)
-var cont8 = ref(0)
-var cont9 = ref(0)
-var cont10 = ref(0)
-var cont11 = ref(0)
-var cont12 = ref(0)
-var cont13 = ref(0)
 
 var acertos = ref(0)
 var erros = ref(0)
@@ -1047,8 +1036,6 @@ const compImgDois = () => {
   } else {
     resp9Comp.value = 'resp9Errado'
   }
-    cont2.value = cont.value - cont1.value
-    console.log(cont2.value)
 }
 
 // Valores imagem 3
@@ -1136,9 +1123,6 @@ const compImgTres = () => {
   } else {
     resp15Comp.value = 'resp15Errado'
   }
-    cont3.value = cont.value - cont2.value
-    console.log(cont3.value)
-
 }
 
 // valores imagens 4
@@ -1188,8 +1172,6 @@ const compImgQuatro = () => {
   } else {
     resp18Comp.value = 'resp18Errado'
   }
-    cont4.value = cont.value - cont3.value
-    console.log(cont4.value)
 }
 
 // Valores imagem 5
@@ -1211,9 +1193,6 @@ const compImgCinco = () => {
   } else {
     resp19Comp.value = 'resp19Errado'
   }
-
-  cont5.value = cont.value - cont4.value
-  console.log(cont5.value)
 }
 
 
@@ -1249,8 +1228,6 @@ const compImgSeis = () => {
   } else {
     resp21Comp.value = 'resp21Errado'
   }
-  cont6.value = cont.value - cont5.value
-  console.log(cont6.value)
 }
 
 // Valores imagem 7
@@ -1296,9 +1273,6 @@ const compImgSete = () => {
   } else {
     resp24Comp.value = 'resp24Errado'
   }
-
-  cont7.value = cont.value - cont6.value
-  console.log(cont7.value)
 }
 
 // Valores imagem 8
@@ -1333,8 +1307,6 @@ const compImgOito = () => {
   } else {
     resp26Comp.value = 'resp26Errado'
   }
-  cont8.value = cont.value - cont7.value
-  console.log(cont8.value)
 }
 
 
@@ -1357,8 +1329,6 @@ const compImgNove = () => {
   } else {
     resp27Comp.value = 'resp27Errado'
   }
-  cont9.value = cont.value - cont8.value
-  console.log(cont9.value)
 }
 
 // Valores imagem 10
@@ -1380,8 +1350,6 @@ const compImgDez = () => {
   } else {
     resp28Comp.value = 'resp28Errado'
   }
-  cont10.value = cont.value - cont9.value
-  console.log(cont10.value)
 }
 
 // Valores imagem 11
@@ -1431,8 +1399,6 @@ const compImgOnze = () => {
   } else {
     resp31Comp.value = 'resp31Errado'
   }
-  cont11.value = cont.value - cont10.value
-  console.log(cont11.value)
 }
 
 // Valores imagem 12
@@ -1454,8 +1420,6 @@ const compImgDoze= () => {
   } else {
     resp32Comp.value = 'resp32Errado'
   }
-  cont12.value = cont.value - cont11.value
-  console.log(cont12.value)
 }
 
 // Valores imagem 13
@@ -1474,6 +1438,8 @@ const trinta4 = (event) => {
     valTrinta4.value = event.target.value.toUpperCase();
 }
 
+var a = 0
+
 const compImgTreze= () => {
     button.value = '' 
     able.value = false
@@ -1490,14 +1456,10 @@ const compImgTreze= () => {
   } else {
     resp34Comp.value = 'resp34Errado'
   }
-  cont13.value = cont.value - cont12.value
-  console.log(cont13.value)
+    acertos.value = cont.value 
+    erros.value = 35 - acertos.value
 }
 
-const feito = () => {
-   acertos.value = cont.value 
-   erros.value = 35 - acertos
-}
 
 const form = useForm ({
     nome_completo: props.aluno.nome_completo,
@@ -1510,8 +1472,7 @@ const submitForm = () => {
     form.transform((data) => ({
         ...data
     }));
-    echo(data);
-    //form.post('/ListaPost')
+form.post('/ListaPost')
 }
 
 
