@@ -13,6 +13,7 @@ class LoginController extends Controller
     public function index(){
         return Inertia::render('Registro');
     }
+    
     public function post(Request $request){
         $request->validate([ 
            'nome_completo' => 'required',
@@ -26,7 +27,6 @@ class LoginController extends Controller
             'matricula' => $request -> matricula,
             'password' => bcrypt($request -> password),   
         ]);
-
 
         return redirect('/');
     }

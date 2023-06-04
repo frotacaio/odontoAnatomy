@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Resultados;
 use App\Models\User;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
@@ -13,6 +14,7 @@ class HomeController extends Controller
     public function index(){
         return Inertia::render('Home',[
             'aluno' => Auth::user(),
+            'resultado' => Resultados::all()
         ]);   
     }
     public function index2(){

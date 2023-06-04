@@ -12,7 +12,7 @@
                     <a-popover title="Resposta" trigger="hover" placement="bottom" class="ml-28 mt-8" >
                         <template #content>
                             <a-input-group compact>
-                                <a-input/>
+                                <a-input v-model="form.respostaUm"/>
                                 <a-button type="primary" class="mt-2">Enviar</a-button>
                             </a-input-group>
                         </template>
@@ -504,6 +504,8 @@
 </template>
 <script setup>
     import { ref } from 'vue';
+    import { useForm } from '@inertiajs/inertia-vue3';
+
     const current = ref(0);
     const next = () => {
       current.value++;
@@ -530,6 +532,10 @@
     ]
     next()
     prev()
+
+const form = useForm({
+    respostaUm : props.resultado[0].resultado
+})
 
 </script>
 
