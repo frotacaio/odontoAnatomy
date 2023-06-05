@@ -9,8 +9,9 @@ use Inertia\Inertia;
 class ListaController extends Controller
 {
     public function index(){
+        $matriculaUsuario = auth()->user()->matricula;
         return Inertia::render('Lista', [
-            'lista' => Lista::all()
+            'lista' => Lista::where('matricula', $matriculaUsuario)->get()
         ]);   
     }
 
