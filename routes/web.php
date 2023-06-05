@@ -23,10 +23,12 @@ Route::get('/Registro', [LoginController::class, 'index'])->name('odonto.registr
 Route::get('/Home', [HomeController::class, 'index'])->name('odonto.home');
 Route::get('/Teste', [HomeController::class, 'index2'])->name('odonto.teste');
 Route::get('/Lista', [ListaController::class, 'index'])->name('odonto.lista');
+Route::get('/Sobre', [OdontoController::class, 'sobre'])->name('odonto.sobre');
 
 
 Route::post('/RegistroPost', [LoginController::class, 'post'])->name('odonto.registroPost');
 Route::post('/auth', [OdontoController::class, 'auth'])->name('odonto.auth');
 Route::post('/ListaPost', [ListaController::class, 'post'])->name('odonto.listaPost');
+Route::get('/logout', [OdontoController::class, 'logout'])->name('logout.perform');
 
 

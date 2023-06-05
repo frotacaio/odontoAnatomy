@@ -22,14 +22,16 @@ class ListaController extends Controller
            'acertos' => 'required|numeric',
            'erros' => 'required|numeric',
         ]);
-         Lista::create([
+        
+        Lista::create([
             'nome_completo' => $request -> nome_completo,
             'matricula' => $request -> matricula,
             'acertos' => $request -> acertos,
             'erros' => $request -> erros,   
         ]);
-        session()->flash('status', 'success');
-        session()->flash('message', 'Resposta cadastrada!');
+
+        //session()->flash('status', 'success');
+        //session()->flash('message', 'Resposta cadastrada!');
 
         return redirect('/Lista');
     }

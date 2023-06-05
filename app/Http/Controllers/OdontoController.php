@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 
@@ -12,6 +13,10 @@ class OdontoController extends Controller
 {
     public function index () {
         return Inertia::render('Login');
+    }
+
+    public function sobre () {
+        return Inertia::render('Sobre');
     }
 
     public function auth(Request $request){
@@ -25,19 +30,19 @@ class OdontoController extends Controller
             $request->session()->regenerate();
             return redirect()->intended('/Home');
         }else{
-            dd('Dados incorretos, verifique e tente novamente');
+
+            return redirect('/')->with('success', 'Dados incorretos, tente novamente');
         }
     }
 
-
-/*     public function logout(Request $request) {
+     public function logout(Request $request) {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/login');
+        return redirect('/');
     }
 
-    public function forgotpassword(Request $request) {
+/*     public function forgotpassword(Request $request) {
 
         $request->validate([
             'email' => 'required|email|exists:users,email'
@@ -45,6 +50,6 @@ class OdontoController extends Controller
         ]);
         $user = User::where("email",$request->get('email'))->first();
         $user->notify(new EmailNotification($user));
-    } */
+    }  */
 
 }

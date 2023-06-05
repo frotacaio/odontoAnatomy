@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\Session\Session;
+use Illuminate\Support\Facades\Session as FacadesSession;
 use Illuminate\Support\ServiceProvider;
+use Inertia\Inertia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,9 +14,12 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
+    public function register(){
+        Inertia::share('flash',function(){
+            return [
+                'success' => FacadesSession::get('success'),
+            ];
+        });
     }
 
     /**

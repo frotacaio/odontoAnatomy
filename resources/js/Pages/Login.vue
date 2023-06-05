@@ -15,10 +15,18 @@
 			<div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 			<div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		</div>
+
 		<div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
+
 			<form class="bg-white" @submit.prevent="submitForm">
 				<h1 class="text-gray-800 font-bold text-2xl mb-1">Olá novamente!</h1>
 				<p class="text-sm font-normal text-gray-600 mb-7">Bem vindo de volta!</p>
+
+				
+			<div  v-if="$attrs.flash.success!=undefined" class="bg-red-100 mb-8flex items-center border-2 py-2 px-3 rounded-2xl mb-4 text-red-700 text-xs">
+				<strong class="font-bold">{{$attrs.flash.success}}</strong>
+			</div>
+
 				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
 					<svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 5H7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2V7a2 2 0 0 0 -2 -2h-2" />  <rect x="9" y="3" width="6" height="4" rx="2" />  <path d="M9 14l2 2l4 -4" /></svg>
 					<input  v-model="form.matricula" class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Matrícula" />
