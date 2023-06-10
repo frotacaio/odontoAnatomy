@@ -14,7 +14,7 @@
                 <Link as="button" href="/Home" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0">Início</Link>
                 </li>
                 <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Formulário</a>
+                <a href="https://forms.gle/WYqKwnPFLhnCP5RT9" target="_blank" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Formulário</a>
                 </li>
                 <li>
                 <Link as="button" href="/Lista" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Lista de Respostas</Link>
