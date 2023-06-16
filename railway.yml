@@ -1,0 +1,5 @@
+build:
+  - name: Install dependencies
+    command: npm ci --prefix ../resources/js/Pages
+  - name: Build assets
+    command: npm run production --prefix ../resources/js/Pages
