@@ -1,13 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=./webpack.config.js",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "build": "vite build"
-  },
+    "prod": "npm run production",
+    "production": "mix --production"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.11",
     "axios": "^0.27",
@@ -28,6 +29,7 @@
     "@inertiajs/inertia-vue3": "^0.6.0",
     "@inertiajs/progress": "^0.2.7",
     "ant-design-vue": "^3.2.15",
+    "cross-env": "^7.0.3",
     "unplugin-vue-components": "^0.22.12",
     "vue": "^3.2.36",
     "ziggy-js": "^1.5.0"
